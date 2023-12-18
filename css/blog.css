@@ -1,0 +1,567 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color:#FAFAF9;
+    font-family: 'Roboto Slab', serif;
+    /* Cor dos textos */
+    color:#373737;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+
+
+.hello {
+    color: #373737 !important;
+}
+
+#ponto {
+    background-color: #05182a;
+
+}
+
+
+.hero {
+    background-color: #05182a;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* classe hero os posts abaixo do navbar, antes de começarem os posts */
+.hero-post {
+    position: relative;
+}
+
+.hero-post-badges {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.hero-post-badges>a {
+    display: block;
+    background-color: #05182a;
+    color: #00fa9a;
+    font-size: 0.8rem;
+}
+
+.hero-post-content {
+    position: absolute;
+    bottom: 10px;
+    color: #66FCF1;
+}
+
+.hero-post-content img {
+    border: 2px solid #00fa9a;
+
+    /* o object-fit: cover; preenche toda a imagem, isso evita nela ficar se esticando */
+    object-fit: cover;
+}
+
+
+
+/* seção do blog */
+.blog-post p {
+    font-size: 0.9rem;
+}
+
+.blog-post h3 {
+    font-size: 1.2rem;
+}
+
+.blog-post {
+    /* imagem de fundos dos posts pequenos */
+    background-image: linear-gradient(90deg, rgba(102,252,241, 0.38),rgb(251, 254, 241));
+}
+
+.blog-post .col-sm-8 {
+    border-left: 3px solid #00fa9a;
+
+}
+
+.blog-post img {
+    width: 100%;
+    height: 100%;
+    /* objectv cover serve para deixar a imagem espaçada corretamente e não ficar esticada */
+    object-fit: cover;
+}
+
+#mais {
+    display: none;
+}
+
+#texto2 {
+    font-size: 20px;
+    
+}
+
+
+
+
+
+/* badge botão branco com limk detro do post */
+.badge {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.badge>a {
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    background-color: #FAFAF9;
+    color: #373737;
+    border-radius: 4px;
+}
+
+
+/* Links de redes socuais abaixo do card principal onde tem a direita*/
+.social-links {
+    font-size: 2rem;
+    
+}
+
+#facebook {
+    border-radius: 8px;  
+}
+
+#facebook >a{
+    color: #6b6b6b;  
+}
+
+#instagram {
+    border-radius: 8px;
+    margin: 0;
+}
+
+#instagram >a{
+    color: #6b6b6b; 
+}
+
+#linkedin {
+    border-radius: 8px;
+}
+
+#linkedin >a{
+    color: #6b6b6b; 
+}
+
+#facebook:hover {
+    background-color: #4064AD;
+    color: #FFF;
+}
+
+#facebook >a:hover {
+    
+    color: #FFF;
+}
+
+#instagram:hover {
+    background-image: linear-gradient(to right, #ba1771, #7a124b,#5f1782);
+    color: #FFF;
+}
+
+#instagram >a:hover {
+    
+    color: #FFF;
+}
+
+#linkedin:hover {
+    background-color: #0271AE;
+    color: #FFF;
+}
+
+#linkedin >a:hover {
+    
+    color: #FFF;
+}
+
+.aside-heading {
+    border-left: 3px solid #00fa9a;
+}
+
+.author p {
+    font-size: 0.9rem;
+}
+
+.author-social-links a {
+    margin-left: 0.8rem;
+}
+
+
+
+/* Aqui começam os badges - categorias dos artigos */
+
+/* aqui deixei os espaçamentos das materias/posts */
+#post-1 {
+    padding-top: 200px;
+    
+}
+
+#post-2 {
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
+.badges {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.badges>a {
+    display: inline-block;
+    margin: 0.2rem;
+    border-radius: 8px;
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    background-color: #05182a;
+    color: #FFF;
+}
+
+.badges>a:hover {
+    background-color: #00fa9a;
+    color: #373737;
+}
+
+
+/* footer */
+#getTouch {
+    background-color: #05182a;
+}
+
+.what p {
+    color: white;
+}
+
+
+/* aqui começa o tag do titulo */
+
+#title_card #description {
+    font-weight: normal;
+    font-size: 17px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #05182a; 
+  }
+  ::-webkit-scrollbar-thumb {
+      /* para mudar a cor da barra de rolagem */
+    background: #00fa9a; 
+  }
+#myLogo a img {
+    width :60%;
+}
+.info {
+    background-color:#05182a !important;
+}
+.info h3 , .info p {
+    color:#00faba !important;
+}
+nav {
+    position: fixed !important;
+    background-color:#05182a;
+    width:100%;
+    z-index: 100;
+}
+.loader {
+    width: 100%;
+    height : 100%;
+    background-color : #05182a;
+    position: fixed;
+    top : 0px;
+    left : 0px;
+    z-index : 1000;
+    overflow : hidden;
+}
+
+@keyframes animation1 {
+    0% {
+        opacity :1;
+    }
+    50% {
+        opacity :0 ;
+    }
+    100% {
+        opacity : 1;
+    }
+}
+.loader .inner {
+    width : 100%;
+    height : 100%;
+    background : url("/Assets/images/coder-head.png") center center no-repeat; 
+    overflow : hidden;
+    transform :scale(1,1);
+    animation:anim_1 5s infinite;
+}
+@keyframes anim_1 {
+    0% {
+        transform :scale(0.5,0.5);
+    }
+    25% {
+        transform :scale(1,1);
+    }
+    50% {
+        transform :scale(0.5,0.5);
+    }
+    75% {
+        transform :scale(1,1);
+    }
+    100% {
+        transform :scale(0.5,0.5);
+    }
+}
+nav ul li a {
+    color:whitesmoke;
+    transition-duration: 0.5s;
+    margin:0px 15px;
+    letter-spacing: 0.5px;
+}
+nav ul li a:hover {
+    color:#00fa9a;
+}
+nav ul li button {
+    background-color:transparent;
+    border:1px solid #00fa9a;
+    transition-duration:0.5s;
+    cursor:pointer;
+}
+nav ul li button:hover {
+    border:1px solid whitesmoke;
+}
+nav ul li button a {
+    display:inline-block;
+    padding:10px 20px;
+}
+nav ul li button a:hover {
+    text-decoration: none;
+}
+.hello {
+    font-size:20px;
+    color:whitesmoke;
+    letter-spacing: 2px;
+}
+
+
+/* Não mexer nesse CSS até o footer */
+
+hr {
+    border:0.5px solid #00fa9a;
+
+}
+
+#up-arrow button {
+    background-color:transparent;
+    border:none;
+    position: fixed;
+    z-index:200;
+    right:30px;
+    bottom:30px;
+}
+/* All media queries starts*/
+@media(max-width:992px) 
+{
+    .banner h1 {
+        font-size:70px;
+    }
+}
+@media(max-width:991px) 
+{
+   #myLogo a img {
+       width:40%;
+   }
+   #myLogo button {
+       margin-left:50%;
+   }
+   .nav-item a,.nav-item button {
+       text-align:center;
+   }
+   .pro-details h2 {
+       font-size:30px;
+       margin:35px 0px;
+   }
+   .pro-details p {
+       margin:20px 0px;
+   }
+}
+@media(max-width:850px) 
+{
+    #contact-right{
+        display:none;
+    }
+    #icon {
+        display:none;
+    }
+}
+@media(max-width:767px) 
+{
+    .banner h1 {
+        font-size:60px;
+    }
+    .about-me .my-image img {
+        margin-top:60px;
+    }
+}
+@media(max-width : 576px)
+{
+    .banner h1 {
+        font-size:45px;
+    }
+    .banner h2 {
+        font-size:40px;
+    }
+}
+@media(max-width:665px) 
+{
+    #myLogo a img{
+        width:55%;
+    }
+    #myLogo button {
+        margin-left:34%;
+    }
+}
+@media(max-width:613px) 
+{
+    #myLogo a img{
+        width:55%;
+    }
+    #myLogo button {
+        margin-left:30%;
+    }
+}
+@media(max-width:465px) 
+{
+    #myLogo a img{
+        width:65%;
+    }
+    #myLogo button {
+        margin-left:18%;
+    }
+}
+@media(max-width :450px)
+{
+    .banner h1 {
+        font-size:35px;
+    }
+    .banner h2 {
+        font-size:30px;
+    }
+}
+@media(max-width:417px) 
+{
+    #myLogo {
+        margin-left:-5%;
+        /* margin-right:-10%; */
+    }
+    #myLogo a img{
+        width:70%;;
+    }
+    #myLogo button {
+        margin-left:10%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+/* Aqui começam o footer */
+
+#footer {
+    background-color: #05182a;
+
+    /* para fazer efeito degrade igual do instagram */
+    /* background-image: linear-gradient(to right, #ba1771, #7a124b,#5f1782); */
+    color: #d5d5d5;
+  }
+  .footer-box {
+      padding: 20px;
+  }
+  .footer-box img {
+      width: 120px;
+      margin-bottom: 20px;
+  }
+  .footer-box .form-control {
+      box-shadow: none;
+      border: none;
+      border-radius: 0;
+      margin-top: 25px;
+      max-width: 250px;
+  }
+  .footer-box .btn-primary {
+      box-shadow: none;
+      border-radius: 25px;
+      margin-top: 30px;
+      background-image: linear-gradient(to right, #ba1771, #7a124b,#5f1782);
+  }
+  hr {
+      background-color: #fff;
+  }
+  
+
+  /*---Media Queries --*/
+@media (max-width: 992px) {
+   #myBtn {
+      transform: translateX(400px);
+  }
+  #services .btn-primary {
+  	transform: translateX(300px);
+  }
+}
+@media (max-width: 768px) {
+  #myBtn {
+      transform: translateX(300px);
+  }
+  #services .btn-primary {
+  	transform: translateX(300px);
+  }
+  #banner .img-fluid {
+  	margin-bottom: .2rem !important;
+  }
+}
+@media (max-width: 576px) {
+  #myBtn {
+      transform: translateX(160px);
+  }
+  #services .btn-primary {
+  	transform: translateX(160px);
+  }
+   #banner .img-fluid {
+  	margin-bottom: .2rem !important;
+  }
+}
+  @media (max-width: 375px) {
+  #myBtn {
+      transform: translateX(100px);
+  }
+  #services .btn-primary {
+  	transform: translateX(100px);
+  }
+}
+
+.copyright {
+    margin-bottom: 0;
+    padding-bottom: 25px;
+}
